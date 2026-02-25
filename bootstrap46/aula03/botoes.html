@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>OT 03 - Bootstrap UNIsenai</title>
@@ -67,8 +67,12 @@
             Notificação <span class="badge badge-light">5</span>
             <span class="sr-only">Mensagem de Notificação</span>
         </button>
+
+        <button type="button" class="btn btn-primary">
+            Profile <span class="badge badge-light">9</span>
+            <span class="sr-only">unread messages</span>
+        </button>
         <br><br><br><br>
-        <!-- Não está funcionando? -->
         <span class="badge badge-primary">Primary</span>
         <span class="badge badge-secondary">Secondary</span>
         <span class="badge badge-success">Success</span>
@@ -86,11 +90,71 @@
     <br>
     <div class="gap-3 py-2 mx-2 w-auto h-50 d-flex justify-content-center align-items-center flex-column">
         <button class="btn btn-primary animate__animated animate__bounce">Botão Animado</button>
+        <div class="card animated fadeInDown"> Car animado</div>
+        <br><br><br><br><br><br>
     </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    <h3 class="h3 text-center">Barras de navegação</h3>
+    <br><br>
+    <div class="d-flex justify-content-center align-items-center fixed-top w-100" style="background-color: #fff;">
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Início</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Início</a>
+                <a class="dropdown-item" href="#">Sobre</a>
+                <a class="dropdown-item" href="#">Produto</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Contato</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Contato</a>
+            </li>
+          </ul>
+        </nav>
+        <form action="" class="form-inline my-2 my-lg-0">
+            <input type="search" placeholder="Pesquisar" class="form-control mr-sm-2">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar escura</a>
+    </nav>
+    <nav class="navbar navbar-dark bg-primary ">
+        <a class="navbar-brand" href="#">Navbar Azul</a>
+    </nav>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">Navbar</a>
+    </nav>
+    <!-- fixed-top: fixei a outra nav-->
+    <nav class="navbar navbar-light bg-light">
+        <a href="#" class="navbar-brand">Fixed top</a>
+    </nav>
+    <!-- Fixado Bottom -->
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <a href="#" class="navbar-brand">Fixed bottom</a>
+    </nav>
+    <!-- Fixado Sticky -->
+    <nav class="navbar sticky-top navbar-light bg-light">
+        <a href="#" class="navbar-brand">Fixed Sticky/a>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
 </body>
 
