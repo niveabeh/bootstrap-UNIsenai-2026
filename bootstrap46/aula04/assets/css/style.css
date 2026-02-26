@@ -1,0 +1,84 @@
+:root {
+  --azul: #47D4FE;
+  --roxo: #480A55;
+  --text-dark: #130B25;
+  --branco-70: rgba(255, 255, 255, 0.7);
+  --branco-80: rgba(255, 255, 255, 0.8);
+  --branco-90: rgba(255, 255, 255, 0.9);
+  --branco-100: rgba(255, 255, 255, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--branco-100);
+  letter-spacing: 0.02em;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--text-dark);
+}
+
+
+/*Container*/
+.secao-hero {
+  background-image: url('../img/img-secoes/secao-1.webp');
+}
+
+.secao-about {
+  background-image: url('../img/img-secoes/secao-2.webp');
+}
+
+.secao-qualification {
+  background-image: url('../img/img-secoes/secao-3.webp');
+}
+
+.secao-projetos {
+  background-image: url('../img/img-secoes/secao-4.webp');
+}
+
+.secao-contact {
+  background-image: url('../img/img-secoes/secao-5.webp');
+}
+.secao-about, .secao-contact, .secao-hero, .secao-projetos, .secao-qualification {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+.descricao{
+  height: 50vh;
+}
+.atributos{
+  margin: 1% 0 1% 0;
+}
+
+.rodape{
+  background-color: var(--roxo);
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*botões*/
+.botao-subir{
+  margin-left: 90%;
+}
+
+/*textos*/
+
+.text-nav{
+  font-size: 1.2rem;
+  color: var(--branco-70);
+}
+.text-nav:hover{
+  text-decoration: none;
+  color: var(--branco-100);
+}

@@ -1,31 +1,290 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>OT 04 - Bootstrap UNIsenai</title>
+    <title>Dev Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
 </head>
+
 <body>
-    <h1 class="text-center text-primary">OT 04 - Bootstrap UNIsenai</h1>
-    <h2 class="text-center text-secondary"><em>Nívea souza</em></h2>
+    <h1></h1>
+    <a href="#topo" id="btn-voltar" class="botao-subir fixed-bottom mb-3">
+        <img src="assets/img/icons-projeto/button-chamada-2.svg" alt="Voltar ao topo">
+    </a>
 
+    <section id="secao-hero" class="">
+      
+        <header class="">
+            <nav class="" aria-label="Menu principal">
+                <button class="navbar-toggler ms-auto" type="button" data-toggle="collapse"
+                    data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <img src="assets/img/icons-projeto/hambur.svg" alt="icone do menu">
 
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+                    <ul class="nav navbar">
+                        <li class="nav-item"><a class="text-nav mr-4" href="#secao-inicio">Home</a></li>
+                        <li class="nav-item"><a class="text-nav mr-4" href="#secao-sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="text-nav mr-4" href="#secao-qualificacoes">Qualificações</a>
+                        </li>
+                        <li class="nav-item"><a class="text-nav mr-4" href="#secao-projetos">Projetos</a></li>
+                        <li class="nav-item"><a class="text-nav mr-4" href="#secao-contato">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="descricao text-center">
+                <div class="container">
+                    <h4 class="h4 text-center mb-2">DEV</h4>
+                    <h1 class="h1 text-center mb-2">PORTFÓLIO</h1>
+                </div>
+                <div id="icon-nivea" class="icon-nivea"></div>
+                <p class="text-center mb-2">
+                    Seja bem-vindo ao meu primeiro portfólio feito com amor, código e muita determinação!<br>
+                    Acompanhe minha jornada no mundo dev!
+                </p>
+            </div>
+    
+            <div class="atributos container atributo d-flex justify-content-center align-items-center ">
+                <img src="assets/img/icons-hero/java-script.svg" alt="Ícone JavaScript" class="icon-hero mr-3 ">
+                <img src="assets/img/icons-hero/html (1).svg" alt="Ícone HTML" class="icon-hero mr-3">
+                <img src="assets/img/icons-hero/css-3.svg" alt="Ícone CSS" class="icon-hero mr-3">
+                <img src="assets/img/icons-hero/design.svg" alt="Ícone UI Design" class="icon-hero mr-3">
+                <img src="assets/img/icons-hero/figma (1).svg" alt="Ícone Figma" class="icon-hero mr-3">
+            </div>
+    
+            <div class="container-fluid">
+                <a href="#secao-sobre" class="botao-descer">
+                    <img src="assets/img/icons-projeto/buttom-chamada.svg" alt="Botão para descer à seção seguinte"
+                        class="img-fluid">
+                </a>
+            </div>
+        </header>
+    </section>
 
+    <section id="secao-sobre" class="">
 
+        <div class="">
+            <div class="">
+                <h2 class="H2 ">Sobre mim</h2>
+                <div class="">
+                    <p>
+                        Olá, meu nome é <b>Nívea!</b> Sou uma desenvolvedora apaixonada por criar soluções inovadoras e
+                        impactantes.
+                        Com experiência em HTML, CSS, JavaScript e WordPress, estou sempre em busca de novos desafios e
+                        oportunidades para aprimorar minhas habilidades.
+                    </p>
+                    <p>
+                        Neste portfólio, você encontrará uma seleção dos meus projetos mais recentes, que refletem minha
+                        dedicação e criatividade.
+                        Estou animada para compartilhar minha jornada com você!
+                    </p>
+                </div>
+            </div>
+        </div>
 
+        <div class="">
+            <div class="">
+                <p>JavaScript</p>
+            </div>
+            <div class="">
+                <p>HTML</p>
+            </div>
+            <div class="">
+                <p>CSS</p>
+            </div>
+            <div class="">
+                <p>UI Design</p>
+            </div>
+            <div class="">
+                <p>Figma</p>
+            </div>
+        </div>
+        <img src="assets/img/icons-projeto/icon-smile.svg" alt="carinha sorrindo" class="svg-smile img-fluid">
+        <img src="assets/img/icons-projeto/icon-cod.svg" alt="Simbolo de programação" class="svg-cod img-fluid">
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-        crossorigin="anonymous"></script>
+    <section id="secao-qualificacao" class="">
+
+        <h1 class="">Qualificações</h1>
+
+        <div class="">
+            <div class="">
+                <div class="">
+                    <div class="">
+                        <h2 class="">Formação Acadêmica</h2>
+                    </div>
+
+                    <div class="">
+                        <img src="assets/img/icons-projeto/icon-educa.svg" alt="Ícone de Educação" class=""/>
+                        <div class="">
+                            <h4>Superior em Análise e Desenvolvimento de Sistemas</h4>
+                            <p>UniSenai Joinville SC (2025 - Atualmente)</p>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <img src="assets/img/icons-projeto/icon-educa.svg" alt="Ícone de Educação" class="" />
+                        <div class="">
+                            <h4>Técnico em Desenvolvimento de Sistemas</h4>
+                            <p>Senai Joinville SC (2023 - 2025)</p>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <img src="assets/img/icons-projeto/icon-educa.svg" alt="Ícone de Educação" class="" />
+                        <div class="">
+                            <h4>Figma Pro UI UX Design</h4>
+                            <p>Udemy (2025)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="caixa-experiencia">
+                    <div class="experiencia">
+                        <h2 class="subtitulo-qualification">Experiência Profissional</h2>
+                    </div>
+
+                    <div class="caixa-texto-neto2 py-3 w-100 d-flex align-items-center gap-4">
+                        <img src="assets/img/icons-projeto/settings 1.svg" alt="Ícone de Ferramenta"
+                            class="icone-svg" />
+                        <div class="conteudo-caixa-texto">
+                            <h4>Estágio em Desenvolvimento de Sistemas</h4>
+                            <p>Migra Cloud (2025 - Atualmente)</p>
+                        </div>
+                    </div>
+                    <div class="caixa-texto-neto2 py-3 w-100 d-flex align-items-center gap-4">
+                        <img src="assets/img/icons-projeto/settings 1.svg" alt="Ícone de Ferramenta"
+                            class="icone-svg" />
+                        <div class="conteudo-caixa-texto">
+                            <h4>Assistente de Logística</h4>
+                            <p>Homero Embalagens H-box (2022 - 2025)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="secao-projetos" class="">
+
+        <div class="">
+            <h1>Projetos</h1>
+        </div>
+
+        <div class="">
+
+            <div class="">
+                <img class="" src="assets/img/img-projetos-feitos/imagem-projeto-1.webp"
+                    alt="Imagem de um exemplo de projeto design para web site">
+                <div class="">
+                    <p>Design Site Institucional</p>
+                </div>
+            </div>
+            <div class="">
+                <img class="" src="assets/img/img-projetos-feitos/imagem-projeto-2.webp"
+                    alt="Imagem de um exemplo de projeto design para web site">
+                <div class="">
+                    <p>Design Site Institucional</p>
+                </div>
+            </div>
+            <div class="">
+                <img class="" src="assets/img/img-projetos-feitos/imagem-projeto-3.webp"
+                    alt="Imagem de um exemplo de projeto design para web site">
+                <div class="">
+                    <p>Design Site Institucional</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="secao-contato" class="">
+
+        <div class="">
+            <h1>Entre em contato</h1>
+        </div>
+
+        <div class="">
+
+            <div class="">
+                <a href="mailto:niveasouza86@gmail.com">
+                    <div class="">
+                        <img src="assets/img/icons-projeto/send 1.svg" alt="icone de contato email"
+                            class="" />
+                        <div class="">
+                            <h5>Email</h5>
+                            <p>niveasouza86@gmail.com</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/niveabeh">
+                    <div class="">
+                        <img src="assets/img/icons-projeto/icon-github.svg" alt="icone de contato github"
+                            class="" />
+                        <div class="">
+                            <h5>Github</h5>
+                            <p>niveabeh</p>
+                        </div>
+                    </div>
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/nivea-souza?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
+                    <div class="">
+                        <img src="assets/img/icons-projeto/icon-linkedin.svg" alt="icone de contato linkedin"
+                            class="" />
+                        <div class="">
+                            <h5>Linkedin</h5>
+                            <p>nivea souza</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/umdianiv?igsh=MTZkdTFuYjBnMzVueg%3D%3D&utm_source=qr">
+                    <div class="">
+                        <img src="assets/img/icons-projeto/instagram.svg" alt="icone de contato instagram"
+                            class="" />
+                        <div class="">
+                            <h5>Instagram</h5>
+                            <p>umdianiv</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="">
+                <form class="">
+                    <div class="">
+                        <div class="">
+                            <input type="text" name="nome" placeholder="Seu nome" class="campo-form" required />
+                        </div>
+                        <div class="">
+                            <input type="email" name="email" placeholder="Seu email" class="campo-form" required />
+                        </div>
+                        <div class="">
+                            <textarea name="mensagem" rows="8" placeholder="Sua mensagem" class="campo-form"
+                                required></textarea>
+                        </div>
+                        <div class="">
+                            <button type="submit" class="btn-enviar">Enviar mensagem</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="rodape container-fluid">
+        <p>© copyright 2025 dev Nívea Souza. Todos os direitos reservados.</p>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
+
 </html>
