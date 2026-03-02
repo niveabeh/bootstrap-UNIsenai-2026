@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/Astyle.css">
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-     <header class="container-fluid">
+    <header class="container-fluid">
 
 
         <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom">
@@ -37,79 +37,119 @@
             </div>
         </nav>
 
-        <div class="container-fluid hero">
-            <div class="container ">
-                <div class="row vh-100">
-                    <div
-                        class="col-12 col-md-6 order-2 order-md-1 hero-left d-flex flex-column justify-content-center align-items-center text-center">
-                        <h1 class="h2 text-center text-white">
-                            Junte-se ao clube e
-                            celebre a magia dos cães. </h1>
-                        <a class="btn  btn-primary" style="width: 200px;" href="inscricao.html"><span>Inscreva-se
-                                Agora!</span></a>
-                    </div>
-                    <div
-                        class="col-12 col-md-6 hero-right  order-1 order-md-2 d-flex flex-column justify-content-center align-items-center text-center">
-                        <div class="hero-btn">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
-    <section>
-        <div class="container-formulario-inscricao">
-            <div class="formulario-left">
-                <div class="logo">
-                    <img src="img\icon\icon-dog-fill-black.png" alt="icone logo cachorro Preto" id="logo-site">
-                    <div class="texto-logo"><a href="index.html" id="texto-logo-top-bar">DogLovePets</a></div>
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="row shadow rounded overflow-hidden">
+
+                <div class="col-12 col-lg-7 p-5 bg-light">
+
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="img/icon/icon-dog-fill-black.png" alt="Ícone logo cachorro preto" width="40"
+                            class="me-2">
+
+                        <a href="index.html" class="h4 mb-0 text-decoration-none text-dark">
+                            DogLovePets
+                        </a>
+                    </div>
+
+                    <h2 class="h4 mb-4">Formulário de Inscrição</h2>
+
+                    <form>
+
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label for="idNome" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="idNome" placeholder="Nome" required>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="sobrenome" class="form-label">Sobrenome</label>
+                                <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome" required>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="E-mail" required>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <label for="telefone" class="form-label">Telefone</label>
+                                <input type="text" class="form-control" id="telefone" placeholder="Telefone" required>
+                            </div>
+
+
+                            <div class="col-12 col-md-6">
+                                <label for="data" class="form-label">Data</label>
+                                <input type="date" class="form-control" id="data" required>
+                            </div>
+
+
+                            <div class="col-12 col-md-6">
+                                <label class="form-label d-block">Sexo</label>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sexo" id="feminino"
+                                        value="feminino">
+                                    <label class="form-check-label" for="feminino">Feminino</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="sexo" id="masculino"
+                                        value="masculino">
+                                    <label class="form-check-label" for="masculino">Masculino</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cookies" required>
+                                <label class="form-check-label" for="cookies">
+                                    Desejo participar do fã-clube
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="termos" required>
+                                <label class="form-check-label" for="termos">
+                                    Concordo com os termos e condições
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="privacidade" required>
+                                <label class="form-check-label" for="privacidade">
+                                    Concordo com a política de privacidade
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="novidades">
+                                <label class="form-check-label" for="novidades">
+                                    Quero receber novidades por e-mail
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="mt-4 d-flex gap-3">
+                            <button type="submit" class="btn btn-primary">
+                                Enviar
+                            </button>
+
+                            <button type="reset" class="btn btn-outline-secondary">
+                                Limpar
+                            </button>
+                        </div>
+
+                    </form>
                 </div>
-                <form>
-                    <fieldset>
-                        <legend>Formulário de Inscrição</legend>
-                        <div class="frm-basico">
-                            <label for="nome">Nome</label>
-                            <input type="text" placeholder="Nome" id="idNome" required>
-                            <label for="sobrenome">Sobrenome</label>
-                            <input type="text" placeholder="Sobrenome" id="sobrenome" required>
-                            <label for="email">Email</label>
-                            <input type="text" placeholder="E-mail" id="email" required>
-                            <label for="telefone">Telefone</label>
-                            <input type="text" placeholder="Telefone" id="telefone" required>
-                        </div>
-                        <div class="frm-menor">
-                            <label for="data">Data</label>
-                            <input type="date" id="data" required>
-                            <div class="frm_sexo">
-                                <label for="sexo">Sexo</label>
-                                <input type="radio" id="feminino" name="sexo" value="feminino">
-                                <label for="feminino" >Feminino</label>
-                                <input type="radio" id="masculino" name="sexo" value="masculino">
-                                <label for="masculino">Masculino</label>
-                            </div>
-                        </div>
-                        <div class="aceitar-termos">
-                            <div><input type="checkbox" id="cookies" name="cookies" required>
-                                <label for="cookies"><span>Desejo participar do fã-clube </span></label>
-                            </div>
-                            <div><input type="checkbox" id="termos" name="termos" required>
-                                <label for="termos"><span>Concordo com os termos e condições</span></label>
-                            </div>
-                            <div><input type="checkbox" id="privacidade" name="privacidade" required>
-                                <label for="privacidade"><span>Concordo com a política de privacidade </span></label>
-                            </div>
-                            <div><input type="checkbox" id="novidades" name="novidades">
-                                <label for="novidades"><span>Quero receber novidades por e-mail </span></label>
-                            </div>
-                        </div>
-                        <div class="container-botao-enviar">
-                            <input type="submit" value="Enviar" class="btn botao-enviar">
-                            <input type="submit" value="Limpar" class="btn botao-limpar">
-                        </div>
-                    </fieldset>
-                </form>
-            </div>
-            <div class="formulario-right">
+
+                <div class="col-12 col-lg-5 bg-primary d-none d-lg-block backg-img-dog">
+                    
+                </div>
 
             </div>
         </div>
@@ -118,7 +158,7 @@
         <div class="container py-5">
             <div class="row gy-4">
 
-   
+
                 <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
                     <img src="img/icon/icon-dog-fill-white.png" alt="Ícone logo cachorro branco" id="logo-site"
                         class="me-2">
@@ -128,7 +168,7 @@
                     </a>
                 </div>
 
-        
+
                 <div class="col-6 col-md-2 d-flex flex-column">
                     <h3 class="h5 text-white">Política de Privacidade</h3>
                     <a class="text-white text-decoration-none" href="#">Termos e Condições</a>
@@ -136,7 +176,7 @@
                     <a class="text-white text-decoration-none" href="#">Diretrizes da Comunidade</a>
                 </div>
 
-    
+
                 <div class="col-6 col-md-2 d-flex flex-column">
                     <h3 class="h5 text-white">Institucional</h3>
                     <a class="text-white text-decoration-none" href="#">Quem Somos</a>
@@ -144,7 +184,7 @@
                     <a class="text-white text-decoration-none" href="#">Contato</a>
                 </div>
 
-              
+
                 <div class="col-12 col-md-2 d-flex flex-column">
                     <h3 class="h5 text-white">Atendimento</h3>
                     <a class="text-white text-decoration-none" href="#">Fale Conosco</a>
@@ -174,7 +214,7 @@
         </div>
 
     </footer>
-     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"

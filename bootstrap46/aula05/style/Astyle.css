@@ -41,3 +41,8 @@
 .back-footer{
     background-color: var(--azul-claro);
 }
+.backg-img-dog{
+    background-image: url("../img/cachorro-deitado.png");
+    background-size: cover;
+    background-position: center;
+}
