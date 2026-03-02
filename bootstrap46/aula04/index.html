@@ -12,15 +12,16 @@
 </head>
 
 <body>
-    <a href="#topo" id="btn-voltar" class="botao-subir fixed-bottom mb-3">
-        <img src="assets/img/icons-projeto/button-chamada-2.svg" alt="Voltar ao topo">
-    </a>
+    <div class="d-flex justify-content-end fixed-bottom mb-3 pr-3">
+        <a href="#topo" class="botao-subir">
+            <img src="assets/img/icons-projeto/button-chamada-2.svg" alt="Voltar ao topo">
+        </a>
+    </div>
 
-    <header class="secao-hero container-fluid d-flex justify-content-between flex-column " id="secao-hero ">
+    <header class="secao-hero container-fluid min-vh-100" id="secao-hero ">
         <nav class="navbar navbar-expand-lg d-flex flex-row-reverse" aria-label="Menu principal">
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="assets/img/icons-projeto/hambur.svg" alt="icone do menu">
 
             </button>
@@ -36,17 +37,17 @@
         </nav>
         <div class="container-fluid text-center">
             <div class="container">
-                <h4 class=" h4 text-center mb-2">DEV</h4>
+                <h4 class=" h4 text-center mt-5">DEV</h4>
                 <h1 class=" text-center mb-2">PORTFÓLIO</h1>
             </div>
-            <div id="icon-nivea" class="icon-nivea"></div>
-            <p class="text-center mb-2">
+            <img src="assets/img/icons-projeto/icon-nivea.svg" alt="nome da autora do projeto" class="img-fluid mb-2">
+            <p class="text-center my-5">
                 Seja bem-vindo ao meu primeiro portfólio feito com amor, código e muita determinação!<br>
                 Acompanhe minha jornada no mundo dev!
             </p>
         </div>
 
-        <div class="atributos container-fluid d-flex justify-content-center align-items-center mt-5 ">
+        <div class="atributos container d-flex justify-content-center align-items-center my-5">
             <img src="assets/img/icons-hero/java-script.svg" alt="Ícone JavaScript" class="icon-hero mr-3 ">
             <img src="assets/img/icons-hero/html (1).svg" alt="Ícone HTML" class="icon-hero mr-3">
             <img src="assets/img/icons-hero/css-3.svg" alt="Ícone CSS" class="icon-hero mr-3">
@@ -62,109 +63,113 @@
         </div>
     </header>
 
-    <section id="secao-sobre container-fluid d-flex justify-content-between flex-column my-5" class="secao-sobre">
+    <section id="secao-sobre"
+        class="secao-sobre container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center">
 
-        <div class="">
+        <div class="container bg-secao-sobre p-5 rounded">
+            <h2 class="H2">Sobre mim</h2>
             <div class="">
-                <h2 class="H2 ">Sobre mim</h2>
-                <div class="">
-                    <p>
-                        Olá, meu nome é <b>Nívea!</b> Sou uma desenvolvedora apaixonada por criar soluções inovadoras e
-                        impactantes.
-                        Com experiência em HTML, CSS, JavaScript e WordPress, estou sempre em busca de novos desafios e
-                        oportunidades para aprimorar minhas habilidades.
-                    </p>
-                    <p>
-                        Neste portfólio, você encontrará uma seleção dos meus projetos mais recentes, que refletem minha
-                        dedicação e criatividade.
-                        Estou animada para compartilhar minha jornada com você!
-                    </p>
+                <p>
+                    Olá, meu nome é <b>Nívea!</b> Sou uma desenvolvedora apaixonada por criar soluções
+                    inovadoras e
+                    impactantes.
+                    Com experiência em HTML, CSS, JavaScript e WordPress, estou sempre em busca de novos
+                    desafios e
+                    oportunidades para aprimorar minhas habilidades.
+                </p>
+                <p>
+                    Neste portfólio, você encontrará uma seleção dos meus projetos mais recentes, que refletem
+                    minha
+                    dedicação e criatividade.
+                    Estou animada para compartilhar minha jornada com você!
+                </p>
+            </div>
+            <div class="row mt-5">
+                <div class="col-2">
+                    <button class="btn btn-outline-primary w-100">JavaScript</button>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-outline-primary w-100">HTML</button>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-outline-primary w-100">CSS</button>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-outline-primary w-100">UI Design</button>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-outline-primary w-100">Figma</button>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-outline-primary w-100">PHP</button>
                 </div>
             </div>
         </div>
-
-        <div class="">
-            <div class="">
-                <p>JavaScript</p>
-            </div>
-            <div class="">
-                <p>HTML</p>
-            </div>
-            <div class="">
-                <p>CSS</p>
-            </div>
-            <div class="">
-                <p>UI Design</p>
-            </div>
-            <div class="">
-                <p>Figma</p>
-            </div>
-        </div>
-        <img src="assets/img/icons-projeto/icon-smile.svg" alt="carinha sorrindo" class="svg-smile img-fluid position-absolute">
-        <img src="assets/img/icons-projeto/icon-cod.svg" alt="Simbolo de programação" class="svg-cod img-fluid position-absolute">
     </section>
 
-    <section id="secao-qualificacao" class="secao-quali ">
+    <section id="secao-qualificacao"
+        class="secao-quali container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center ">
 
-        <h1 class="">Qualificações</h1>
+        <h2 class="h2 text-center mb-5">Qualificações</h2>
 
-        <div class="">
-            <div class="">
-                <div class="">
-                    <div class="">
-                        <h2 class="">Formação Acadêmica</h2>
-                    </div>
+        <div class="container">
+            <div class="row ">
+                <div class="col-6 ">
+                    <div class="beckg-roxo p-4">
 
-                    <div class="">
-                        <img src="assets/img/icons-projeto/icon-educa.svg" alt="Ícone de Educação" class="" />
-                        <div class="">
-                            <h4>Superior em Análise e Desenvolvimento de Sistemas</h4>
-                            <p>UniSenai Joinville SC (2025 - Atualmente)</p>
+                        <h3 class="mb-4">Formação Acadêmica</h3>
+
+                        <div class="d-flex ">
+                            <img src="assets/img/icons-projeto/icon-educa.svg" alt="Ícone de Educação" class="" />
+                            <div class="ml-2">
+                                <h4>Superior em Análise e Desenvolvimento de Sistemas</h4>
+                                <p>UniSenai Joinville SC (2025 - Atualmente)</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="">
-                        <img src="assets/img/icons-projeto/icon-educa.svg" alt="Ícone de Educação" class="" />
-                        <div class="">
-                            <h4>Técnico em Desenvolvimento de Sistemas</h4>
-                            <p>Senai Joinville SC (2023 - 2025)</p>
+                        <div class="d-flex mt-3">
+                            <img src="assets/img/icons-projeto/icon-educa.svg" alt="Ícone de Educação" class="" />
+                            <div class="ml-2">
+                                <h4>Técnico em Desenvolvimento de Sistemas</h4>
+                                <p>Senai Joinville SC (2023 - 2025)</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="">
-                        <img src="assets/img/icons-projeto/icon-educa.svg" alt="Ícone de Educação" class="" />
-                        <div class="">
-                            <h4>Figma Pro UI UX Design</h4>
-                            <p>Udemy (2025)</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="caixa-experiencia">
-                    <div class="experiencia">
-                        <h2 class="subtitulo-qualification">Experiência Profissional</h2>
-                    </div>
-
-                    <div class="caixa-texto-neto2 py-3 w-100 d-flex align-items-center gap-4">
-                        <img src="assets/img/icons-projeto/settings 1.svg" alt="Ícone de Ferramenta"
-                            class="icone-svg" />
-                        <div class="conteudo-caixa-texto">
-                            <h4>Estágio em Desenvolvimento de Sistemas</h4>
-                            <p>Migra Cloud (2025 - Atualmente)</p>
-                        </div>
-                    </div>
-                    <div class="caixa-texto-neto2 py-3 w-100 d-flex align-items-center gap-4">
-                        <img src="assets/img/icons-projeto/settings 1.svg" alt="Ícone de Ferramenta"
-                            class="icone-svg" />
-                        <div class="conteudo-caixa-texto">
-                            <h4>Assistente de Logística</h4>
-                            <p>Homero Embalagens H-box (2022 - 2025)</p>
+                        <div class="d-flex mt-3">
+                            <img src="assets/img/icons-projeto/icon-educa.svg" alt="Ícone de Educação" class="" />
+                            <div class=" ml-2">
+                                <h4>Figma Pro UI UX Design</h4>
+                                <p>Udemy (2025)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-6">
+                    <div class="beckg-roxo p-4">
+                        <div class="experiencia">
+                            <h2 class="subtitulo-qualification">Experiência Profissional</h2>
+                        </div>
 
+                        <div class="caixa-texto-neto2 py-3 w-100 d-flex align-items-center">
+                            <img src="assets/img/icons-projeto/settings 1.svg" alt="Ícone de Ferramenta"
+                                class="icone-svg" />
+                            <div class="ml-2">
+                                <h4>Estágio em Desenvolvimento de Sistemas</h4>
+                                <p>Migra Cloud (2025 - Atualmente)</p>
+                            </div>
+                        </div>
+                        <div class="caixa-texto-neto2 py-3 w-100 d-flex align-items-center">
+                            <img src="assets/img/icons-projeto/settings 1.svg" alt="Ícone de Ferramenta"
+                                class="icone-svg" />
+                            <div class="ml-2">
+                                <h4>Assistente de Logística</h4>
+                                <p>Homero Embalagens H-box (2022 - 2025)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
     </section>
 
     <section id="secao-projetos" class="secao-projetos">

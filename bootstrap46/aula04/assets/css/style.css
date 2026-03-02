@@ -10,12 +10,14 @@
 
 
 * {
-  box-sizing: border-box;;
+  box-sizing: border-box;
+  ;
   margin: 0;
   padding: 0;
   color: var(--branco-100);
   letter-spacing: 0.02em;
 }
+
 html {
   scroll-behavior: smooth;
   background-color: var(--text-dark);
@@ -25,7 +27,7 @@ html {
 
 
 /*Container*/
-.secao-hero{
+.secao-hero {
   background-image: url('../img/img-secoes/secao-1.webp');
 }
 
@@ -41,61 +43,59 @@ html {
   background-image: url('../img/img-secoes/secao-4.webp');
 }
 
-.secao-contato{
+.secao-contato {
   background-image: url('../img/img-secoes/secao-5.webp');
 }
-.secao-sobre, .secao-contato, .secao-hero, .secao-projetos, .secao-quali {
+
+.secao-sobre,
+.secao-contato,
+.secao-hero,
+.secao-projetos,
+.secao-quali {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  width: 100%;
-  height: 100vh;
 }
 
-h1{
-  font-size: 6rem !important;
-  margin-bottom: 1%;
-}
-p{
+p {
   color: var(--branco-70);
 }
 
-.atributos{
-  margin: 1% 0 1% 0;
-}
-
-.rodape{
+.rodape {
   background-color: var(--roxo);
   height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-/*botões*/
-.botao-subir{
-  margin-left: 90%;
-}
+
 
 /*textos*/
 
-.text-nav{
+.text-nav {
   font-size: 1.2rem;
   color: var(--branco-70);
 }
-.text-nav:hover{
+
+.text-nav:hover {
   text-decoration: none;
   color: var(--branco-100);
 }
 
 /*icones*/
 
-.svg-smile{
+.svg-smile {
   width: 6rem;
   height: 6rem;
 }
-.svg-cod{
+
+.svg-cod {
   width: 6rem;
   height: 6rem;
   margin-left: 90%;
+}
+
+.beckg-roxo {
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  background: rgba(99, 82, 82, 0.20);
+  backdrop-filter: blur(30px);
 }
