@@ -1,0 +1,32 @@
+
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --azul-escuro: #09396D;
+    --azul-claro: #BAD5F2;
+    --rosa-pink: #C6355E;
+    --rosa-bebe: #F5B0CD;
+    --cor-fundo: #EDECE5;
+    --laranja: #FF9500;
+    --cinza: #6C6C6C;
+}
+
+.navbar-custom{
+    background-color: var(--cor-fundo);
+}
+.hero-left,
+.hero-right {
+    background: var(--branco) 50% / contain no-repeat;
+}
+
+.hero-left {
+    background-image: url("../img/img-modificada/hero-left.png");
+}
+
+.hero-right {
+    background-image: url("../img/img-modificada/hero-right.png");
+}
+.btn-primary {
+    background-color: var(--rosa-pink) !important;
+    border-color: var(--rosa-pink) !important;
+}

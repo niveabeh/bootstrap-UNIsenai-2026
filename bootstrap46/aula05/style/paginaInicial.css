@@ -1,0 +1,243 @@
+.hero {
+    display: flex;
+    height: 800px;
+    padding: 0 60px;
+    align-items: flex-start;
+}
+
+
+
+.hero-left p {
+    color: var(--branco);
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+}
+/* Botões */
+.botao-pink,
+.botao-pink-frm {
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s, border 0.3s;
+}
+.botao-pink a{
+    text-decoration: none;
+}
+
+.botao-pink {
+    max-width: 320px;
+    border: 4px solid var(--rosa-bebe);
+    background: var(--branco);
+}
+
+.botao-pink:hover {
+    border-color: var(--rosa-pink);
+    background: var(--rosa-pink);
+}
+
+.botao-pink span,
+.botao-pink-frm span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.botao-pink span {
+    color: var(--rosa-bebe);
+}
+
+.botao-pink:hover span {
+    color: var(--branco);
+}
+
+/* Botão formulário assinar */
+.botao-pink-frm {
+    max-width: 150px;
+    border: 2px solid var(--branco);
+    background: var(--rosa-pink);
+    align-self: stretch;
+}
+
+.botao-pink-frm:hover {
+    border-color: var(--rosa-bebe);
+    background: var(--branco);
+}
+
+.botao-pink-frm span {
+    color: var(--branco);
+}
+
+.botao-pink-frm:hover span {
+    color: var(--rosa-pink);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 0;
+    background: var(--cor-fundo);
+    margin: 0;
+}
+
+.banner-rosa {
+    width: 1184px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.container-polaroid-text {
+    display: flex;
+    width: 1184px;
+    height: 406px;
+    align-items: flex-start;
+}
+
+.container-polaroid-text img {
+    width: 400px;
+    height: 400px;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    align-self: stretch;
+    background-image: url("../img/img-modificada/papel.png") var(--cor-fundo) center / cover no-repeat;;
+}
+
+.banner-text p {
+    color: var(--azul-escuro);
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.banner-text span {
+    color: var(--rosa-bebe);
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Seção de imagens */
+.my-dogs {
+    display: flex;
+    align-items: flex-start;
+    gap: 27px;
+}
+
+.my-dogs div img {
+    width: 374px;
+    height: 374px;
+    border-radius: 50%;
+}
+
+.container-elemento-blue {
+    display: flex;
+    height: 292px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    max-width: 100%;
+    align-self: stretch;
+    background: var(--cor-fundo) 50% / contain no-repeat;
+    background-image: url("../img/img-modificada/background-elemento-blue.png");
+}
+
+.container-elemento-blue p {
+    color: var(--azul-escuro);
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* Muro de fotos */
+.muro-fotos-dogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 670px;
+    width: 100%;
+}
+
+.muro-fotos-dogs div {
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.muro-fotos-dogs div img {
+    width: 33%;
+    height: 330px;
+    object-fit: cover;
+}
+
+/* Formulário de contato */
+.form-email-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-email-contato img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Formulário rosa */
+.frm-pink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px 0;
+    background-color: var(--rosa-pink);
+    align-self: stretch;
+}
+
+.frm-pink-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+}
+
+.frm-pink-itens h1 {
+    color: var(--branco);
+    font-family: Poppins, sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: left;
+    margin: 0;
+}
+
+.frm-pink-itens label, .frm-pink-itens p {
+    color: var(--branco);
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+}
+
+.container-frm {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+}
+
+.container-frm input {
+    background-color: var(--branco);
+    border-radius: 10px;
+    width: 550px;
+    padding: 12px 20px;
+    border: none;
+}
