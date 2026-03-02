@@ -99,3 +99,23 @@ p {
   background: rgba(99, 82, 82, 0.20);
   backdrop-filter: blur(30px);
 }
+
+.back-footer {
+  background: rgb(30, 3, 60);
+}
+
+.info-contato {
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.50);
+  background: rgba(12, 11, 51, 0.50);
+}
+
+.icon-tamanho-footer {
+  width: 42px;
+  height: 42px;
+}
+
+.back-card-contato {
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+}

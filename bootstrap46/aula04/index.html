@@ -206,78 +206,89 @@
 
     </section>
 
-    <section id="secao-contato" class="secao-contato ">
+    <section id="secao-contato"
+        class="secao-contato container-fluid min-vh-100 d-flex flex-column justify-content-center align-items-center p-5 ">
 
-        <div class="">
-            <h2>Entre em contato</h2>
-        </div>
+        <h2 class="h2 text-center">Entre em contato</h2>
 
-        <div class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                    <div class="p-4 back-card-contato">
 
-            <div class="">
-                <a href="mailto:niveasouza86@gmail.com">
-                    <div class="">
-                        <img src="assets/img/icons-projeto/send 1.svg" alt="icone de contato email" class="" />
-                        <div class="">
-                            <h5>Email</h5>
-                            <p>niveasouza86@gmail.com</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://github.com/niveabeh">
-                    <div class="">
-                        <img src="assets/img/icons-projeto/icon-github.svg" alt="icone de contato github" class="" />
-                        <div class="">
-                            <h5>Github</h5>
-                            <p>niveabeh</p>
-                        </div>
-                    </div>
-                </a>
-                <a
-                    href="https://www.linkedin.com/in/nivea-souza?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
-                    <div class="">
-                        <img src="assets/img/icons-projeto/icon-linkedin.svg" alt="icone de contato linkedin"
-                            class="" />
-                        <div class="">
-                            <h5>Linkedin</h5>
-                            <p>nivea souza</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://www.instagram.com/umdianiv?igsh=MTZkdTFuYjBnMzVueg%3D%3D&utm_source=qr">
-                    <div class="">
-                        <img src="assets/img/icons-projeto/instagram.svg" alt="icone de contato instagram" class="" />
-                        <div class="">
-                            <h5>Instagram</h5>
-                            <p>umdianiv</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                        <a href="mailto:niveasouza86@gmail.com" class="m-1">
+                            <div class="info-contato p-4">
+                                <img src="assets/img/icons-projeto/send 1.svg" alt="icone de contato email"
+                                    class="icon-tamanho-footer" />
+                                <div class="">
+                                    <h5>Email</h5>
+                                    <p>niveasouza86@gmail.com</p>
+                                </div>
+                            </div>
+                        </a>
 
-            <div class="">
-                <form class="">
-                    <div class="">
-                        <div class="">
-                            <input type="text" name="nome" placeholder="Seu nome" class="campo-form" required />
-                        </div>
-                        <div class="">
-                            <input type="email" name="email" placeholder="Seu email" class="campo-form" required />
-                        </div>
-                        <div class="">
-                            <textarea name="mensagem" rows="8" placeholder="Sua mensagem" class="campo-form"
-                                required></textarea>
-                        </div>
-                        <div class="">
-                            <button type="submit" class="btn-enviar">Enviar mensagem</button>
-                        </div>
+                        <a href="https://github.com/niveabeh" class="m-1">
+                            <div class="info-contato p-4">
+                                <img src="assets/img/icons-projeto/icon-github.svg" alt="icone de contato github"
+                                    class="icon-tamanho-footer" />
+                                <div class="">
+                                    <h5>Github</h5>
+                                    <p>niveabeh</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nivea-souza?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                            class="m-1">
+                            <div class="info-contato p-4">
+                                <img src="assets/img/icons-projeto/icon-linkedin.svg" alt="icone de contato linkedin"
+                                    class="icon-tamanho-footer" />
+                                <div class="">
+                                    <h5>Linkedin</h5>
+                                    <p>nivea souza</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/umdianiv?igsh=MTZkdTFuYjBnMzVueg%3D%3D&utm_source=qr"
+                            class="m-1">
+                            <div class="info-contato p-4">
+                                <img src="assets/img/icons-projeto/instagram.svg" alt="icone de contato instagram"
+                                    class="icon-tamanho-footer" />
+                                <div class="">
+                                    <h5>Instagram</h5>
+                                    <p>umdianiv</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </form>
+                </div>
+
+                <div class="col-12 col-md-6 mb-3 ">
+                    <div class="p-4 back-card-contato">
+
+                        <form class="">
+
+                            <div class="form-group">
+                                <input type="text" name="nome" class="form-control" placeholder="Seu nome" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Seu email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea name="mensagem" rows="6" class="form-control" placeholder="Sua mensagem"
+                                    required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Enviar mensagem</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <footer class="rodape container-fluid">
-        <p>© copyright 2025 dev Nívea Souza. Todos os direitos reservados.</p>
+    <footer class="rodape container-fluid back-footer d-flex justify-content-center align-items-center p-3">
+        <p class="text-center">© 2025 Dev Nívea Souza. Todos os direitos reservados.</p>
     </footer>
     <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
