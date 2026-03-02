@@ -11,28 +11,48 @@
 </head>
 
 <body>
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <img src="img\icon\icon-dog-fill-black.png" alt="icone logo cachorro Preto" id="logo-site">
-                <div class="texto-logo"><a href="index.html" id="texto-logo-top-bar">DogLovePets</a></div>
+     <header class="container-fluid">
+
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">DogLovePets</a>
+            <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+                <ul class="navbar-nav mt-2 mt-lg-0 justify-content-end w-100">
+                    <li class="nav-item active mr-2">
+                        <a class="nav-link" href="index.html">PÁGINA INICIAL<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="conteudo.html">CONTEÚDO</a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a class="nav-link" href="inscricao.html">INSCRIÇÃO</a>
+                    </li>
+                </ul>
             </div>
-            <nav>
-                <div>
-                    <a href="index.html">PÁGINA INICIAL</a>
-                    <img src="img\icon\dog-pagina-inicial.png" alt="icone pata de cachorro">
+        </nav>
+
+        <div class="container-fluid hero">
+            <div class="container ">
+                <div class="row vh-100">
+                    <div
+                        class="col-12 col-md-6 order-2 order-md-1 hero-left d-flex flex-column justify-content-center align-items-center text-center">
+                        <h1 class="h2 text-center text-white">
+                            Junte-se ao clube e
+                            celebre a magia dos cães. </h1>
+                        <a class="btn  btn-primary" style="width: 200px;" href="inscricao.html"><span>Inscreva-se
+                                Agora!</span></a>
+                    </div>
+                    <div
+                        class="col-12 col-md-6 hero-right  order-1 order-md-2 d-flex flex-column justify-content-center align-items-center text-center">
+                        <div class="hero-btn">
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <a href="conteudo.html">CONTEÚDO</a>
-                    <img src="img\icon\dog-conteudo.png" alt="icone pata de cachorro">
-                </div>
-                <div>
-                    <a href="inscricao.html">INSCRIÇÃO</a>
-                    <img src="img\icon\dog-inscricao.png" alt="icone pata de cachorro com coração">
-                </div>
-            </nav>
-        </div>
-        <div class="hero-inscricao">
+            </div>
         </div>
     </header>
     <section>
@@ -92,49 +112,65 @@
             </div>
         </div>
     </section>
-    <footer>
-        <div class="container-informacoes">
-            <div class="logo-footer">
-                <img src="img\icon\icon-dog-fill-white.png" alt="icone logo cachorro branco" id="logo-site">
-                <div class="texto-logo"><a href="index.html" id="texto-logo-footer">DogLovePets</a></div>
+    <footer class="container-fluid back-footer">
+        <div class="container py-5">
+            <div class="row gy-4">
+
+   
+                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="img/icon/icon-dog-fill-white.png" alt="Ícone logo cachorro branco" id="logo-site"
+                        class="me-2">
+
+                    <a href="index.html" class="h3 text-white text-decoration-none">
+                        DogLovePets
+                    </a>
+                </div>
+
+        
+                <div class="col-6 col-md-2 d-flex flex-column">
+                    <h3 class="h5 text-white">Política de Privacidade</h3>
+                    <a class="text-white text-decoration-none" href="#">Termos e Condições</a>
+                    <a class="text-white text-decoration-none" href="#">Cookies e Dados</a>
+                    <a class="text-white text-decoration-none" href="#">Diretrizes da Comunidade</a>
+                </div>
+
+    
+                <div class="col-6 col-md-2 d-flex flex-column">
+                    <h3 class="h5 text-white">Institucional</h3>
+                    <a class="text-white text-decoration-none" href="#">Quem Somos</a>
+                    <a class="text-white text-decoration-none" href="#">Campanha de Adoção</a>
+                    <a class="text-white text-decoration-none" href="#">Contato</a>
+                </div>
+
+              
+                <div class="col-12 col-md-2 d-flex flex-column">
+                    <h3 class="h5 text-white">Atendimento</h3>
+                    <a class="text-white text-decoration-none" href="#">Fale Conosco</a>
+                    <a class="text-white text-decoration-none" href="#">Dúvidas Frequentes</a>
+                    <a class="text-white text-decoration-none" href="#">E-mail</a>
+                </div>
+
             </div>
-            <div class="footer-informacoes">
-                <h3>Política de Privacidade</h3>
-                <a href="#">Termos e Condições</a>
-                <a href="#">Cookies e Dados</a>
-                <a href="#">Diretrizes da Comunidade</a>
+            <div class="row my-5">
+                <div class="col align-items-center d-flex justify-content-center">
+                    <img src="img\icon\facebook.svg" alt="icone facebook" width="24px" height="24px">
+                </div>
+                <div class="col align-items-center d-flex justify-content-center">
+                    <img src="img\icon\insta.svg" alt="icone instagram" width="24px" height="24px">
+                </div>
+                <div class="col align-items-center d-flex justify-content-center">
+                    <img src="img\icon\twitter.svg" alt="icone twitter" width="24px" height="24px">
+                </div>
             </div>
-            <div class="footer-informacoes">
-                <h3>Institucional</h3>
-                <a href="#">Quem Somos</a>
-                <a href="#">Campanha de Adoção</a>
-                <a href="#">Contato</a>
-            </div>
-            <div class="footer-informacoes">
-                <h3>Atendimento</h3>
-                <a href="#">Fale Conosco</a>
-                <a href="#">Dúvidas Frequentes</a>
-                <a href="#">E-mail</a>
-            </div>
-            <div class="footer-informacoes">
-                <h3>Links</h3>
-                <a href="index.html">Página Inicial</a>
-                <a href="conteudo.html">Conteúdo</a>
-                <a href="inscricao.html">Inscrição</a>
+
+            <div class="row my-5">
+                <div class="col-12">
+                    <p class="text-white text-center">© 2025 DogLovePet - Todos os Direitos Reservados | DogLovePet Fã
+                        Clube</p>
+                </div>
             </div>
         </div>
-        <div class="redes-sociais-footer">
-            <img src="img\icon\Ellipse.svg" alt="icone-elipse">
-            <img src="img\icon\facebook.svg" alt="icone facebook">
-            <img src="img\icon\Ellipse.svg" alt="icone-elipse">
-            <img src="img\icon\insta.svg" alt="icone instagram">
-            <img src="img\icon\Ellipse.svg" alt="icone-elipse">
-            <img src="img\icon\twitter.svg" alt="icone twitter">
-            <img src="img\icon\Ellipse.svg" alt="icone-elipse">
-        </div>
-        <div class="copyright">
-            <p>© 2025 DogLovePet - Todos os Direitos Reservados | DogLovePet Fã Clube</p>
-        </div>
+
     </footer>
 
 </body>
