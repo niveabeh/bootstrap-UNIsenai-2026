@@ -38,3 +38,6 @@
     border-color: var(--branco) !important;
     color: var(--rosa-pink) !important;
 }
+.back-footer{
+    background-color: var(--azul-claro);
+}
