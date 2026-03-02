@@ -30,3 +30,11 @@
     background-color: var(--rosa-pink) !important;
     border-color: var(--rosa-pink) !important;
 }
+.backg-pink{
+    background-color: var(--rosa-pink);
+}
+.btn-secundary {
+    background-color: var(--branco) !important;
+    border-color: var(--branco) !important;
+    color: var(--rosa-pink) !important;
+}
