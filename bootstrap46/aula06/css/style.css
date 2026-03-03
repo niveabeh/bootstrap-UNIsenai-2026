@@ -1,0 +1,100 @@
+:root {
+    --cor-laranja: #F48D36;
+    --cor-laranja-hover: #D05F00;
+    --cor-laranja-active: #ff7300;
+    --cor-branco-50: rgb(255, 255, 255, 0.5);
+    --cor-branco-70: rgb(255, 255, 255, 0.7);
+    --cor-branco-80: rgb(255, 255, 255, 0.8);
+    --cor-branco-90: rgb(255, 255, 255, 0.9);
+    --cor-branco-100: rgb(255, 255, 255);
+    --cor-roxo-claro: #8D95D6;
+}
+
+* {
+    font-family: 'poppins', sans-serif;
+}
+
+
+.bg-btn-laranja {
+    background-color: var(--cor-laranja);
+
+}
+
+.bg-img-login {
+    background-image: url("../assets/imgs/img-cachorro-hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width: 767px) {
+    .img-login {
+        max-width: 100%;
+    }
+}
+
+.bg-login-roxo {
+    background-image: url("../assets/imgs/background_login.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-pp {
+    color: var(--cor-branco-70);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.32px;
+}
+
+.form-label {
+    color: var(--cor-branco-90);
+    font-size: 1rem;
+}
+
+.form-control {
+    background-color: transparent;
+    border: 1px solid var(--cor-branco-90);
+}
+
+.form-control::placeholder {
+    color: var(--cor-branco-80);
+}
+
+.btn-primary {
+    background-color: var(--cor-laranja);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--cor-laranja-hover);
+}
+
+.btn-primary:active {
+    background-color: var(--cor-laranja-active) !important;
+}
+
+.div-linha {
+    height: 2px;
+    flex: 1 0 0;
+    background: var(--cor-branco-50);
+}
+
+.bg-footer {
+    background-color: var(--cor-roxo-claro);
+}
+
+.text-h2 {
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4px;
+}
+.text-pi{
+    color: var(--cor-branco-90);
+}
+.stroke-white{
+    border-top: 1px solid var(--cor-branco-50);
+}
