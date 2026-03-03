@@ -8,6 +8,7 @@
     --cor-branco-90: rgb(255, 255, 255, 0.9);
     --cor-branco-100: rgb(255, 255, 255);
     --cor-roxo-claro: #8D95D6;
+    --cor-roxo-escuro: #4E59BF;
 }
 
 * {
@@ -92,9 +93,22 @@
     line-height: normal;
     letter-spacing: 4px;
 }
-.text-pi{
+
+.text-pi {
     color: var(--cor-branco-90);
 }
-.stroke-white{
+
+.stroke-white {
     border-top: 1px solid var(--cor-branco-50);
+}
+
+.text-logo-nav {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+}
+.bg-funto-nav{
+    background-color: var(--cor-roxo-escuro) ;
 }
