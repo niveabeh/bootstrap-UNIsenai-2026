@@ -9,16 +9,22 @@
     --cor-branco-100: rgb(255, 255, 255);
     --cor-roxo-claro: #8D95D6;
     --cor-roxo-escuro: #4E59BF;
+    --cor-texto-cinza: #747474;
+    --cor-fundo-azul: #F5F7FD;
 }
 
 * {
-    font-family: 'poppins', sans-serif;
+    font-family: 'inter', sans-serif;
+    overflow-x: hidden;
 }
 
 
 .bg-btn-laranja {
     background-color: var(--cor-laranja);
 
+}
+.bg-laranja{
+    background-color: var(--cor-laranja);
 }
 
 .bg-img-login {
@@ -64,18 +70,7 @@
     color: var(--cor-branco-80);
 }
 
-.btn-primary {
-    background-color: var(--cor-laranja);
-    border: none;
-}
 
-.btn-primary:hover {
-    background-color: var(--cor-laranja-hover);
-}
-
-.btn-primary:active {
-    background-color: var(--cor-laranja-active) !important;
-}
 
 .div-linha {
     height: 2px;
@@ -103,6 +98,7 @@
 }
 
 .text-logo-nav {
+    color: var(--cor-branco-100);
     font-size: 20px;
     font-style: italic;
     font-weight: 700;
@@ -111,4 +107,46 @@
 }
 .bg-funto-nav{
     background-color: var(--cor-roxo-escuro) ;
+}
+.text-logo-nav{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.8px;
+}
+.nav-left-container{
+    border-radius: 0 0 0 32px;
+    padding: 4px 120px 4px 0;
+}
+.tam-icon-nav{
+    width: 24px;
+    height: 24px;
+}
+.nav a{
+    text-decoration: none;
+    color: var(--cor-texto-cinza) !important;
+    transition: all 0.3s;
+}
+.nav li:hover{
+    background-color: var(--cor-roxo-escuro);  
+}
+.nav li a:hover{
+    color: var(--cor-branco-100) !important;
+}
+
+.bg-dashbord{
+    background-color: var(--cor-fundo-azul);
+}
+.btn-primary{
+    text-align: start;
+    text-decoration: none !important;
+    color: var(--cor-branco-100) !important;
+    background: transparent !important;
+    border: none !important;
+}
+.btn.active{
+    background-color: #D05F00 !important;
+    text-decoration: none !important;
+    color: var(--cor-branco-100) !important;
 }

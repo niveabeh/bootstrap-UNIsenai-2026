@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -11,42 +12,49 @@
 </head>
 
 <body>
-    <header class="container-fluid">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg fixed-top bg-funto-nav">
-                <div class="container-fluid ">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                        <div class="d-flex justify-content-center align-items-center gap-2">
-                            <img src="assets/icons/logo-laranja.svg" height="32px" width="32px" alt="">
-                            <p class="text-white text-logo-nav m-0">Adopet</p>
-                        </div>
-                    </div>
-                    <div class="bg-white w-100 d-flex justify-content-end">
-                    <ul class="navbar-nav  mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+    <nav class="container-fluid fixed-top bg-funto-nav d-flex justify-content-end px-0 pb-1 gap-2">
+        <div class=" d-flex justify-content-end" style="width: 20%;">
+            <div class="d-flex align-items-center justify-content-center gap-1 py-2">
+                <img src="assets/icons/logo-laranja.svg" width="42px" alt="">
+                <p class="text-logo-nav m-0">Adopet</p>
+            </div>
+        </div>
+        <div class="bg-light nav-left-container d-flex align-items-center justify-content-center" style="width: 80%;">
+            <div class="row">
+                <div class="col-10">
+                    <ul class="nav gap-4">
+                        <li class="nav-item rounded-pil d-flex align-items-center justify-content-center">
+                            <img src="assets/icons/icone-casa-branco.svg" class="tam-icon-nav" alt="icone casa branco">
+                            <a href="#" class="nav-link text-dark">início</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li class="nav-item rounded-pil d-flex align-items-center justify-content-center">
+                            <img src="assets/icons/icone-casa-branco.svg" class="tam-icon-nav" alt="icone casa branco">
+                            <a href="#" class="nav-link text-dark">Animais</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <li class="nav-item rounded-pil d-flex align-items-center justify-content-center">
+                            <img src="assets/icons/icone-casa-branco.svg" class="tam-icon-nav" alt="icone casa branco">
+                            <a href="#" class="nav-link text-dark">ONG´s</a>
+                        </li>
+                        <li class="nav-item rounded-pil d-flex align-items-center justify-content-center">
+                            <img src="assets/icons/icone-casa-branco.svg" class="tam-icon-nav" alt="icone casa branco">
+                            <a href="#" class="nav-link text-dark">Adotar</a>
                         </li>
                     </ul>
-                    <div>
-                        <!-- botoes de controle usuario e hamburger -->
-                    </div>
-    
+                </div>
+                <div class="col-2">
+                    <div class="d-flex align-items-center justify-content-center gap-3 p-2 rounded-pill bg-laranja">
+                        <a href="">
+                            <img src="assets/icons/icone-botao-menu-braco-persona.svg" class="tam-icon-nav" alt="">
+                        </a>
+                        <a href="">
+                            <img src="assets/icons/icone-botao-menu-sem-fundo--menu-hambur.svg" class="tam-icon-nav"
+                                alt="">
+                        </a>
                     </div>
                 </div>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
     <section class="container-fluid bg-login-roxo  h-auto p-4 d-flex align-items-center justify-content-center">
         <div class="container">
             <div class="row">
@@ -92,7 +100,7 @@
         </div>
     </section>
 
-    <footer class="container-fluid bg-footer">
+    <footer class="container-fluid bg-footer ">
         <div class="container py-4">
             <div class="row">
                 <div class="col-12 d-flex align-items-center justify-content-center flex-column my-2">
@@ -112,7 +120,7 @@
                             height="32px" alt=""></a>
                 </div>
             </div>
-            <div class="row my-4">
+            <div class="row my-4 fixed-top">
                 <div
                     class="col-6 col-md-2 offset-0 offset-md-2 d-flex justify-content-center align-items-center flex-column">
                     <h4 class="text-white">Animais</h4>
