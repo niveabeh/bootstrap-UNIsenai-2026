@@ -1,152 +1,58 @@
 :root {
-    --cor-laranja: #F48D36;
+    --cor-roxo-hover: #32376D;
+    --cor-roxo: #4E59BF;
+    --cor-roxo-bg: #6972BD;
     --cor-laranja-hover: #D05F00;
-    --cor-laranja-active: #ff7300;
-    --cor-branco-50: rgb(255, 255, 255, 0.5);
-    --cor-branco-70: rgb(255, 255, 255, 0.7);
-    --cor-branco-80: rgb(255, 255, 255, 0.8);
-    --cor-branco-90: rgb(255, 255, 255, 0.9);
-    --cor-branco-100: rgb(255, 255, 255);
-    --cor-roxo-claro: #8D95D6;
-    --cor-roxo-escuro: #4E59BF;
-    --cor-texto-cinza: #747474;
-    --cor-fundo-azul: #F5F7FD;
+    --cor-laranja: #F07915;
+    --cor-laranja-claro: #F69E54;
+    --cor-texto: #3B3D53;
+    --cor-sub-texto: #747474;
+    --cor-azul-bg: #F5F7FD;
+    --cor-branco: #fff;
+}
+*{
+    overflow: hidden;
 }
 
-* {
-    font-family: 'inter', sans-serif;
-    overflow-x: hidden;
+.bg-primary{
+    background-color: var(--cor-azul-bg) !important;
+}
+.bg-secondary{
+    background-color: var(--cor-roxo-bg) !important;
 }
 
-
-.bg-btn-laranja {
-    background-color: var(--cor-laranja);
-
-}
-.bg-laranja{
-    background-color: var(--cor-laranja);
-}
-
-.bg-img-login {
-    background-image: url("../assets/imgs/img-cachorro-hero.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.nav-link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    padding: 10px 20px;
+    color: var(--cor-branco);
 }
 
-@media (max-width: 767px) {
-    .img-login {
-        max-width: 100%;
-    }
-}
-
-.bg-login-roxo {
-    background-image: url("../assets/imgs/background_login.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.text-pp {
-    color: var(--cor-branco-70);
-    font-size: 1rem;
+.descripition {
+    font-size: 14px;
     font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    letter-spacing: 0.32px;
-}
-
-.form-label {
-    color: var(--cor-branco-90);
-    font-size: 1rem;
-}
-
-.form-control {
-    background-color: transparent;
-    border: 1px solid var(--cor-branco-90);
-}
-
-.form-control::placeholder {
-    color: var(--cor-branco-80);
-}
-
-
-
-.div-linha {
-    height: 2px;
-    flex: 1 0 0;
-    background: var(--cor-branco-50);
-}
-
-.bg-footer {
-    background-color: var(--cor-roxo-claro);
-}
-
-.text-h2 {
-    font-style: italic;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 4px;
+    letter-spacing: 0.64px;
+    text-transform: capitalize;
 }
 
-.text-pi {
-    color: var(--cor-branco-90);
+.nav-link:hover {
+    background-color: var(--cor-laranja);
+    color: var(--cor-branco);
+    border-radius: 8px;
 }
 
-.stroke-white {
-    border-top: 1px solid var(--cor-branco-50);
-}
 
-.text-logo-nav {
-    color: var(--cor-branco-100);
+/* Textos */
+.text-logo {
+    color: var(--cor-branco);
+    text-align: center;
     font-size: 20px;
     font-style: italic;
     font-weight: 700;
     line-height: normal;
-    letter-spacing: 1.8px;
-}
-.bg-funto-nav{
-    background-color: var(--cor-roxo-escuro) ;
-}
-.text-logo-nav{
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.8px;
-}
-.nav-left-container{
-    border-radius: 0 0 0 32px;
-    padding: 4px 120px 4px 0;
-}
-.tam-icon-nav{
-    width: 24px;
-    height: 24px;
-}
-.nav a{
-    text-decoration: none;
-    color: var(--cor-texto-cinza) !important;
-    transition: all 0.3s;
-}
-.nav li:hover{
-    background-color: var(--cor-roxo-escuro);  
-}
-.nav li a:hover{
-    color: var(--cor-branco-100) !important;
-}
-
-.bg-dashbord{
-    background-color: var(--cor-fundo-azul);
-}
-.btn-primary{
-    text-align: start;
-    text-decoration: none !important;
-    color: var(--cor-branco-100) !important;
-    background: transparent !important;
-    border: none !important;
-}
-.btn.active{
-    background-color: #D05F00 !important;
-    text-decoration: none !important;
-    color: var(--cor-branco-100) !important;
+    letter-spacing: 2px;
 }
