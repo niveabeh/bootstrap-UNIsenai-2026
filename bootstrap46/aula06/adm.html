@@ -4,93 +4,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="js/main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Dashboard</title>
+    <title>Admin Dashboard</title>
 </head>
 
 <body>
-    <div class="container-flex p-0 m-0">
-        <div class="row p-0 m-0 d-flex">
-            <div class="col-2 fixed-top bg-secondary h-100">
-                <div class="my-4">
-                    <a class="navbar-brand d-flex align-items-center justify-content-center flex-column" href="#">
-                        <img src="assets/icons/logo-laranja.svg" alt="Bootstrap" width="40px" height="40px">
-                        <span class="text-logo description d-none d-sm-block">Adopet</span>
-
-                    </a>
-                </div>
-                <div class="container-itens-nav d-flex justify-content-between flex-column p-0 h-75">
-                    <div class="h-75">
-                        <a href="#" class="nav-link d-flex justify-content-center align-items-center">
-                            <span class="icon">
-                                <i class="bi bi-clipboard2-data"></i>
-                            </span>
-                            <span class="descripition d-none d-lg-inline">
-                                Dashboard
-                            </span>
-                        </a>
-                        <a href="#" class="nav-link d-flex justify-content-center align-items-center">
-                            <span class="icon">
-                                <i class="bi bi-postcard-heart"></i>
-                            </span>
-                            <span class="descripition d-none d-lg-inline">
-                                ONG´s
-                            </span>
-                        </a>
-                        <a href="#" class="nav-link d-flex justify-content-center align-items-center">
-                            <span class="icon">
-                                <i class="bi bi-balloon-heart"></i>
-                            </span>
-                            <span class="descripition d-none d-lg-inline">
-                                Animais
-                            </span>
-                        </a>
-                        <a href="#" class="nav-link d-flex justify-content-center align-items-center">
-                            <span class="icon">
-                                <i class="bi bi-person"></i>
-                            </span>
-                            <span class="descripition d-none d-lg-inline">
-                                Usuários
-                            </span>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="#" class="nav-link d-flex justify-content-center align-items-center">
-                            <span class="icon">
-                                <i class="bi bi-gear"></i>
-                            </span>
-                            <span class="descripition d-none d-lg-inline">
-                                Configuração
-                            </span>
-                        </a>
-                        <a href="#" class="nav-link d-flex justify-content-center align-items-center">
-                            <span class="icon">
-                                <i class="bi bi-trash3"></i>
-                            </span>
-                            <span class="descripition d-none d-lg-inline">
-                                Sair
-                            </span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-10">
-                <main class="main-content">
-                    <h2>responsivo</h2>
-                </main>
-            </div>
+    <nav
+        class="navbar-mobile bg-roxo d-lg-none position-fixed w-100 d-flex align-items-center justify-content-between p-2">
+        <button class="menu-btn" id="openMenu">
+            <i class="bi bi-list"></i>
+        </button>
+        <button class="btn btn-sm rounded-circle btn-primary position-relative">
+            <i class="bi bi-bell"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger">3
+            </span>
+        </button>
+    </nav>
+    <div class="mobile-menu position-fixed w-100 min-vh-100 d-lg-none bg-roxo p-2" id="mobileMenu">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <img src="assets/icons/logo-laranja.svg" class="logo-mobile">
+            <button class="close-btn" id="closeMenu">
+                <i class="bi bi-x-lg"></i>
+            </button>
         </div>
+        <ul class="nav flex-column mt-5 text-center">
+            <li class="nav-item">
+                <a class="nav-link btn-sidebar" href="#">
+                    <i class="bi bi-graph-up me-2"></i>
+                    Dashboard
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn-sidebar" href="#">
+                    <i class="bi bi-person-plus  me-2"></i>
+                    Usuários
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn-sidebar" href="#">
+                    <i class="bi bi-house-heart  me-2"></i>
+                    ONG's
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn-sidebar" href="#">
+                    <i class="bi bi-postcard-heart  me-2"></i>
+                    Animais
+                </a>
+            </li>
+            <li class="nav-item mt-4">
+                <a class="nav-link btn-sidebar" href="#">
+                    <i class="bi bi-gear me-2"></i>
+                    Configuração
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn-sidebar" href="#">
+                    <i class="bi bi-box-arrow-right me-2"></i>
+                    Sair
+                </a>
+            </li>
+            <li class="nav-item">
+                <label class="nav-link btn-sidebar d-flex align-items-center mb-0" for="darkModeSwitch">
+                    <i class="bi bi-moon me-2"></i>
+                    Modo Dark
+                    <input class="form-check-input ms-auto" type="checkbox" id="darkModeSwitch">
+                </label>
+            </li>
+        </ul>
     </div>
 
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-lg-2 d-none d-lg-block min-vh-100 bg-roxo py-4">
+                <div class="position-sticky d-flex flex-column pt-3 justify-content-between h-100">
+                    <div>
+                        <div class="container-fluid d-flex flex-column justify-content-center align-items-center">
+                            <img src="assets/icons/logo-laranja.svg" class="h-25 w-25">
+                            <p class="text-white">Adopet</p>
+                        </div>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active btn-sidebar" href="#">
+                                    <i class="bi bi-graph-up me-2"></i>
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-sidebar" href="#">
+                                    <i class="bi bi-person-plus  me-2"></i>
+                                    Usuários
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-sidebar" href="#">
+                                    <i class="bi bi-house-heart  me-2"></i>
+                                    ONG's
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-sidebar" href="animais.html">
+                                    <i class="bi bi-postcard-heart  me-2"></i>
+                                    Animais
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link btn-sidebar" href="#">
+                                <i class="bi bi-gear me-2"></i>
+                                Configuração
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-sidebar" href="#">
+                                <i class="bi bi-box-arrow-right me-2"></i>
+                                Sair
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="container-main col-12 col-lg-10 px-3 px-md-4 py-3 min-vh-100">
+                <div class="row align-items-center mb-4 gy-3">
+                    <div class="col-12 col-md-6">
+                        <h3 class="h4 mb-1">
+                            Bom dia, <span>Robert</span>!
+                        </h3>
+                        <p class="mb-0 text-muted">
+                            Acompanhe de perto o progresso
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 d-none d-lg-block">
+                        <div class="d-flex flex-wrap justify-content-md-end align-items-center gap-3">
+                            <div class="form-check form-switch d-flex align-items-center">
+                                <input class="form-check-input" type="checkbox" id="darkModeSwitch">
+                            </div>
+                            <button class="btn btn-sm  rounded-circle btn-primary position-relative">
+                                <i class="bi bi-bell"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3
+                                </span>
+                            </button>
+                            <div class="d-flex align-items-center gap-2 bg-white p-2 rounded-3">
+                                <img src="assets/imgs/img-cachorro-login.webp" class="rounded-circle" width="48"
+                                    height="48">
+                                <div>
+                                    <h6 class="mb-0">Robert</h6>
+                                    <small class="text-muted">Administrador</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row  align-items-center mb-4 gy-3">
+                   
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class>
+                            <div class="card-body">
+                                <div class="row g-3 mb-4">
+                                    <div class="col-md-3 col-6">
+                                        <div class="card shadow-sm">
+                                            <div class="card-body">
+                                                <p class="fw-bold text-secondary">Animais Cadastrado</p>
+                                                <p class="h4 mb-0 text-cor-texto">305</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="card shadow-sm">
+                                            <div class="card-body">
+                                                <p class="fw-bold text-secondary">Usuários Ativos</p>
+                                                <p class="h4 mb-0 text-cor-texto">235</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="card shadow-sm">
+                                            <div class="card-body">
+                                                <p class="fw-bold text-secondary">ONG’s Ativas</p>
+                                                <p class="h4 mb-0 text-cor-texto">3</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <div class="card shadow-sm">
+                                            <div class="card-body">
+                                                <p class="fw-bold text-secondary">Número de Doações</p>
+                                                <p class="h4 mb-0 text-cor-texto">15</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-4 mb-4">
+                                    <div class="col-lg-8 col-12">
+                                        <div class="card shadow">
+                                            <div class="card-body">
+                                                <div class="grafico-principal">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-12 d-flex flex-column gap-4">
+                                        <div class="card shadow flex-fill">
+                                            <div class="card-body">
+                                                <div class="grafico-secundario">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card shadow flex-fill">
+                                            <div class="card-body">
+                                                <div class="grafico-secundario">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
 </body>
 
 </html>
