@@ -10,49 +10,85 @@
     --cor-azul-bg: #F5F7FD;
     --cor-branco: #fff;
 }
-*{
-    overflow: hidden;
+
+.btn-primary {
+    background: var(--cor-laranja);
+    border: none;
 }
 
-.bg-primary{
-    background-color: var(--cor-azul-bg) !important;
-}
-.bg-secondary{
-    background-color: var(--cor-roxo-bg) !important;
+.btn-primary:hover {
+    background: var(--cor-laranja-hover);
 }
 
-.nav-link {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    gap: 20px;
-    padding: 10px 20px;
-    color: var(--cor-branco);
+body {
+    background: url(../assets/imgs/background_login.webp);
 }
 
-.descripition {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.64px;
-    text-transform: capitalize;
+.bg-roxo {
+    background-color: var(--cor-roxo);
 }
 
-.nav-link:hover {
+.bg-roxo-hover {
+    background-color: var(--cor-roxo-hover);
+}
+
+.bg-roxo-bg {
+    background-color: var(--cor-roxo-bg);
+}
+
+.bg-laranja {
     background-color: var(--cor-laranja);
-    color: var(--cor-branco);
-    border-radius: 8px;
+}
+
+.bg-laranja-hover {
+    background-color: var(--cor-laranja-hover);
+}
+
+.bg-laranja-claro {
+    background-color: var(--cor-laranja-claro);
+}
+
+.bg-azul-bg {
+    background-color: var(--cor-azul-bg);
+}
+
+.bg-branco {
+    background-color: var(--cor-branco);
 }
 
 
-/* Textos */
-.text-logo {
-    color: var(--cor-branco);
-    text-align: center;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 700;
+@media (min-width: 1000px) {
+    .logo-div {
+        width: 10%;
+        display: flex;
+        justify-content: end;
+    }
+}
+
+.div-menu {
+    height: 50px;
+}
+
+.nav-pill {
+    transition: all 0.3s;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
     line-height: normal;
-    letter-spacing: 2px;
+    letter-spacing: 0.36px;
+    text-transform: capitalize;
+    color: var(--cor-texto);
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav-pill:hover,
+.nav-pill:focus {
+    background-color: var(--cor-roxo);
+    color: var(--cor-branco);
+    text-decoration: none;
+}
+
+.nav-pill img {
+    display: inline-block;
 }

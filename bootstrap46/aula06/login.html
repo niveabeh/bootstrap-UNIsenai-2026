@@ -4,147 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>tela de login</title>
+    <title>Tela de Login</title>
 </head>
 
 <body>
-    <nav class="container-fluid fixed-top bg-funto-nav d-flex justify-content-end px-0 pb-1 gap-2">
-        <div class=" d-flex justify-content-end" style="width: 20%;">
-            <div class="d-flex align-items-center justify-content-center gap-1 py-2">
-                <img src="assets/icons/logo-laranja.svg" width="52px" alt="">
-                <p class="text-logo-nav m-0">Adopet</p>
-            </div>
-        </div>
-        <div class="bg-light nav-left-container d-flex align-items-center justify-content-center" style="width: 80%;">
-            <div class="row">
-                <div class="col-10">
-                    <ul class="nav gap-4">
-                        <li class="nav-item rounded-pil d-flex align-items-center justify-content-center">
-                            <img src="assets/icons/icone-casa-branco.svg" class="tam-icon-nav" alt="icone casa branco">
-                            <a href="#" class="nav-link text-dark">início</a>
-                        </li>
-                        <li class="nav-item rounded-pil d-flex align-items-center justify-content-center">
-                            <img src="assets/icons/icone-casa-branco.svg" class="tam-icon-nav" alt="icone casa branco">
-                            <a href="#" class="nav-link text-dark">Animais</a>
-                        </li>
-                        <li class="nav-item rounded-pil d-flex align-items-center justify-content-center">
-                            <img src="assets/icons/icone-casa-branco.svg" class="tam-icon-nav" alt="icone casa branco">
-                            <a href="#" class="nav-link text-dark">ONG´s</a>
-                        </li>
-                        <li class="nav-item rounded-pil d-flex align-items-center justify-content-center">
-                            <img src="assets/icons/icone-casa-branco.svg" class="tam-icon-nav" alt="icone casa branco">
-                            <a href="#" class="nav-link text-dark">Adotar</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-2">
-                    <div class="d-flex align-items-center justify-content-center gap-3 p-2 rounded-pill bg-laranja">
-                        <a href="">
-                            <img src="assets/icons/icone-botao-menu-braco-persona.svg" class="tam-icon-nav" alt="">
+    <nav class="navbar navbar-expand-lg bg-roxo shadow-sm">
+        <div class="container-fluid  px-2 px-lg-0">
+            <a class="navbar-brand d-flex align-items-center gap-2 logo-div" href="#">
+                <img src="assets/icons/logo-laranja.svg" width="40" alt="">
+                <span class="fw-bold text-white">Adopet</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between rounded-start-pill bg-white pe-lg-4 p-2" id="menu">
+                <ul class="navbar-nav mx-auto gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link nav-pill rounded-pill d-flex align-items-center gap-2" href="#">
+                            <i class="bi bi-house-heart"></i>
+                            Início
                         </a>
-                        <a href="">
-                            <img src="assets/icons/icone-botao-menu-sem-fundo--menu-hambur.svg" class="tam-icon-nav"
-                                alt="">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-pill rounded-pill d-flex align-items-center gap-2" href="#">
+                            <i class="bi bi-heart"></i>
+                            Animais
                         </a>
-                    </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-pill rounded-pill d-flex align-items-center gap-2" href="#">
+                            <i class="bi bi-balloon-heart"></i>
+                            ONGs
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-pill rounded-pill d-flex align-items-center gap-2" href="#">
+                            <i class="bi bi-clipboard2-heart"></i>
+                            Adotar
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex gap-3 bg-laranja p-2 rounded-pill">
+                    <a href="#">
+                        <img src="assets/icons/icone-botao-menu-braco-persona.svg" width="28" alt="">
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
-    <section class="container-fluid bg-login-roxo  h-auto p-4 d-flex align-items-center justify-content-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <img src="assets/imgs/img-cachorro-login.webp" alt="Imagem de um cachorro fofo"
-                        class="img-fluid img-login w-100 rounded-4 mb-2">
+    <section class="container-fluid d-flex align-items-center py-5">
+        <div class="container my-5">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6 order-md-1 order-2">
+                    <img src="assets/imgs/img-cachorro-login.webp" class="img-fluid rounded-4 w-100"
+                        alt="Imagem de um cachorro fofo">
                 </div>
-                <div class="col-12 col-md-6 d-flex align-items-center justify-content-center flex-column">
-                    <h2 class="h2 mb-2 text-white  align-self-start">Lorem ipsum dolor sit amet </h2>
-                    <p class="text-pp mb-3">Lorem ipsum dolor sit amet consectetur. Dui sapien porttitor aliquam
-                        maecenas aliquam netus eget. </p>
-                    <form class="w-100" style="max-width: 550px;">
+                <div class="col-md-6 order-md-2 order-1">
+                    <h2 class="text-white mb-3">
+                        Encontre um amigo para toda a vida
+                    </h2>
+                    <p class="text-white mb-4">
+                        Faça parte de uma comunidade que acredita na segunda chance.
+                        Entre na sua conta para encontrar animais disponíveis para adoção e ajudar a transformar
+                        histórias.
+                    </p>
+                    <form class="">
                         <div class="mb-3">
-                            <label for="email" class="form-label">Seu Email </label>
-                            <input type="email" class="form-control rounded-5" id="email" placeholder="Seu email aqui">
+                            <label for="email" class="form-label text-white">Seu Email</label>
+                            <input type="email" class="form-control rounded-pill" id="email"
+                                placeholder="Seu email aqui">
                         </div>
                         <div class="mb-3">
-                            <label for="password" class="form-label">Senha</label>
-                            <input type="password" class="form-control rounded-5" id="password"
+                            <label for="password" class="form-label text-white">Senha</label>
+                            <input type="password" class="form-control rounded-pill" id="password"
                                 placeholder="Sua senha aqui">
                         </div>
-                        <button type="submit" class="btn btn-primary rounded-5 w-100"> <img
-                                src="assets/icons/icone-baloes-brancos.svg" width="32px" height="32px" alt="">
-                            Submit</button>
-                        <div class="row mt-2">
-                            <div class="col-5 d-flex align-items-center justify-content-center">
-                                <div class="div-linha"></div>
-                            </div>
-                            <p class="col-2 text-white m-0 d-flex align-items-center justify-content-center">ou</p>
-                            <div class="col-5 d-flex align-items-center justify-content-center">
-                                <div class="div-linha"></div>
-                            </div>
+                        <button type="submit"
+                            class="btn btn-primary w-100 rounded-pill d-flex align-items-center justify-content-center gap-2">
+                            <img src="assets/icons/icone-baloes-brancos.svg" width="24">
+                            Entrar
+                        </button>
+                        <div class="d-flex align-items-center my-3">
+                            <hr class="flex-grow-1 text-white">
+                            <span class="mx-2 text-white">ou</span>
+                            <hr class="flex-grow-1 text-white">
                         </div>
-                        <div class="row mt-2 ">
-                            <p
-                                class="col-12  col-sm-6 text-white d-flex align-items-center justify-content-center gap-2">
-                                Ainda não possui uma conta? </p>
-                            <a href="#" class="col-12 col-sm-6 text-white "><strong>Cadastre-se</strong></a>
+                        <div class="row text-center">
+                            <p class="col-sm-6 text-white mb-1">
+                                Ainda não possui uma conta?
+                            </p>
+                            <a href="#" class="col-sm-6 text-white fw-bold">
+                                Cadastre-se
+                            </a>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-
-    <footer class="container-fluid bg-footer ">
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-12 d-flex align-items-center justify-content-center flex-column my-2">
-                    <img src="assets/icons/logo-laranja.svg" width="150px" height="150px" alt="">
-                    <h2 class="h2 text-white text-h2">Adopet</h2>
-                    <p class="text-pi text-center" style="max-width: 30%;">cada cadastro é uma nova chance e cada adoção
-                        é uma história reescrita.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 d-flex align-items-center justify-content-center gap-4">
-                    <a href="#" class="text-white"><img src="assets/icons/tabler-icon-brand-facebook.svg" width="32px"
-                            height="32px" alt=""></a>
-                    <a href="#" class="text-white"><img src="assets/icons/tabler-icon-brand-instagram.svg" width="32px"
-                            height="32px" alt=""></a>
-                    <a href="#" class="text-white"><img src="assets/icons/tabler-icon-brand-tiktok.svg" width="32px"
-                            height="32px" alt=""></a>
-                </div>
-            </div>
-            <div class="row my-4 fixed-top">
-                <div
-                    class="col-6 col-md-2 offset-0 offset-md-2 d-flex justify-content-center align-items-center flex-column">
-                    <h4 class="text-white">Animais</h4>
-                    <p class="text-white">Porte Pequeno</p>
-                    <p class="text-white">Porte Médio</p>
-                    <p class="text-white">Porte Grande</p>
-                    <p class="text-white">Felinos</p>
-                </div>
-                <div class="col-6 col-md-2 d-flex justify-content-start align-items-center flex-column">
-                    <h4 class="text-white">Cadastre-se</h4>
-                    <p class="text-white">ONG´s</p>
-                    <p class="text-white">Adotar</p>
-                </div>
-            </div>
-            <div class="row stroke-white pt-2">
-                <p class="text-pp text-center text-white"> <small>© 2026 Adopet . Todos os direitos reservados.</small>
+    <footer class="container-fluid py-4 h-auto">
+        <div class="container">
+            <div class="text-center mb-4">
+                <img src="assets/icons/logo-laranja.svg" width="120">
+                <h2 class="text-white mt-2">
+                    Adopet
+                </h2>
+                <p class="text-white mx-auto" style="max-width:300px">
+                    Conectando pessoas a animais que precisam de um novo lar.
                 </p>
             </div>
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <a href="#">
+                    <img src="assets/icons/tabler-icon-brand-facebook.svg" width="28">
+                </a>
+                <a href="#">
+                    <img src="assets/icons/tabler-icon-brand-instagram.svg" width="28">
+                </a>
+                <a href="#">
+                    <img src="assets/icons/tabler-icon-brand-tiktok.svg" width="28">
+                </a>
+            </div>
+            <div class="row text-center text-md-start justify-content-center mb-4">
+                <div class="col-6 col-md-2">
+                    <h5 class="text-white">Animais</h5>
+                    <p class="text-white mb-1">Porte Pequeno</p>
+                    <p class="text-white mb-1">Porte Médio</p>
+                    <p class="text-white mb-1">Porte Grande</p>
+                    <p class="text-white mb-1">Felinos</p>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h5 class="text-white">Cadastre-se</h5>
+                    <p class="text-white mb-1">ONGs</p>
+                    <p class="text-white mb-1">Adotar</p>
+                </div>
+            </div>
+            <hr class="text-white">
+
+            <p class="text-center text-white mb-0">
+                <small>© 2026 Adopet. Todos os direitos reservados.</small>
+            </p>
         </div>
-
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
