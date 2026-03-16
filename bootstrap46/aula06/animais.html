@@ -13,6 +13,8 @@
 </head>
 
 <body>
+
+
     <nav
         class="navbar-mobile bg-roxo d-lg-none position-fixed w-100 d-flex align-items-center justify-content-between p-2">
         <button class="menu-btn" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
@@ -25,7 +27,9 @@
             </span>
         </button>
     </nav>
-    <div class="offcanvas offcanvas-start mobile-menu bg-roxo d-lg-none p-2" tabindex="-1" id="mobileMenu">
+
+
+    <div class="offcanvas offcanvas-start mobile-menu bg-roxo d-lg-none p-2" id="mobileMenu">
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <img src="assets/icons/logo-laranja.svg" class="logo-mobile">
             <button class="close-btn" data-bs-dismiss="offcanvas">
@@ -194,14 +198,17 @@
                             <button class="btn btn-outline-roxo btn-sm">Ativos</button>
                         </div>
                         <div class="d-flex flex-column flex-md-row gap-2 botoes-acoes">
+
                             <button class="btn btn-secondary btn-sm d-flex align-items-center justify-content-center"
                                 data-bs-toggle="modal" data-bs-target="#modalAdicionarAnimal">
                                 <i class="bi bi-plus-lg me-1"></i> Adicionar
                             </button>
+
                             <button
                                 class="btn btn-outline-roxo btn-sm d-flex align-items-center justify-content-center">
                                 <i class="bi bi-download me-1"></i> Exportar
                             </button>
+                            
                         </div>
                     </div>
                 </div>
@@ -324,7 +331,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="modalEditar" tabindex="-1" aria-labelledby="modalEditarLabel" aria-hidden="true">
+    <div class="modal fade" id="modalEditar">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -365,8 +372,7 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="modalAdicionarAnimal" tabindex="-1" aria-labelledby="modalAdicionarAnimalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="modalAdicionarAnimal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
